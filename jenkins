@@ -1,0 +1,18 @@
+pipeline{
+agent any
+stages{
+stage('checkout') {
+git 'https://github.com/yankils/hello-world.git'}
+stage('build'){
+build 'https://github.com/yankils/hello-world.git'
+}
+stage('test: load-&-security'){
+
+}
+stage('approval'){
+}
+stage('deploy:prod'){
+
+}
+}
+}
